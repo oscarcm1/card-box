@@ -1,0 +1,159 @@
+.card-box {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.36);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.left {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #e7e7e7;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right {
+  position: relative;
+  width: 100%;
+  background-color: #212121;
+  height: 600px;
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 40px;
+}
+
+.producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.producto img {
+  width: 60%;
+  filter: drop-shadow(3px 2px 8px rgb(0 0 0 / 0.5));
+  -webkit-filter: drop-shadow(3px 2px 8px rgb(0 0 0 / 0.5));
+}
+
+.precio {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.precio h2 {
+  text-transform: uppercase;
+  color: rgb(63, 63, 63);
+}
+.precio p {
+  color: rgb(58, 169, 58);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.titulo {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.titulo h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.data {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 350px;
+}
+
+.meses {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.meses input {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  color: white;
+}
+
+.data p {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(192, 192, 192);
+}
+
+.boton {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton button {
+  background-color: rgb(126, 205, 126);
+  border: none;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0px;
+}
+.info input {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+}
