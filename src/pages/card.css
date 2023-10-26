@@ -1,0 +1,176 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+.card-box{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://img1.wallspic.com/crops/9/4/8/5/7/175849/175849-estrella-galaxia-nebulosa_de_orion-universo-via_lactea-3840x2160.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+.btn{
+  position: fixed;
+  width: auto;
+  height: 10vh;
+  top: 0;
+  right:0;
+  padding: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.btn button{
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+
+.card{
+  position: relative;
+  width: 90%;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0);
+  transform-style: none;
+  transform-origin: none;
+  transform:none ;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transform:none ;
+  -moz-transform:none ;
+  -ms-transform:none ;
+  -o-transform:none ;
+}
+
+.card.active{
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transform: perspective(18cm) rotateY(20deg);
+  -webkit-transform: perspective(18cm) rotateY(20deg);
+  -moz-transform: perspective(18cm) rotateY(20deg);
+  -ms-transform: perspective(18cm) rotateY(20deg);
+  -o-transform: perspective(18cm) rotateY(20deg);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+/* .card:hover{
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+} */
+
+
+.item{
+ width: 30%;
+ height: 200px;
+ transform-style: preserve-3d;
+ transform-origin: left;
+ transition: 1s;
+ -webkit-transition: 1s;
+ -moz-transition: 1s;
+ -ms-transition: 1s;
+ -o-transition: 1s;
+ flex-grow: 1;
+ border-radius:10px ;
+ -webkit-border-radius:10px ;
+ -moz-border-radius:10px ;
+ -ms-border-radius:10px ;
+ -o-border-radius:10px ;
+ color: white;
+ font-size: 12px;
+ text-align: center;
+ text-transform: uppercase;
+ opacity: .7;
+ filter: grayscale(.7);
+ -webkit-filter: grayscale(.7);
+}
+.item:hover{
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateZ(40px);
+  -webkit-transform: translateZ(40px);
+  -moz-transform: translateZ(40px);
+  -ms-transform: translateZ(40px);
+  -o-transform: translateZ(40px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  opacity: 1;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.item img{
+  width: 100%;
+}
+
+
+
+
+
+.info{
+  position: absolute;
+  width: 40%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5%;
+  color: white;
+  scale: 0;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.info.active{
+  scale: 1;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+
+}
