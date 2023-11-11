@@ -1,61 +1,17 @@
 import React from 'react'
 import "./card.css"
-import { data } from './Data'
 
 function Card() {
-  return (
-    <div className='box'>
-
-      {/* {data.map((key) =>
-        <div className='card'  key={key.id} >
-           <img src={key.img} alt=""/>
-           <p>{key.title}</p>
+    return (
+        <div className='box'>
+            <div className='perpective'>
+                <div className='card'> 
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button>Ver más</button>
+                </div>
+            </div>
         </div>
-      )} */}
-
-        <div className='card'>
-          <div className='child'>
-          </div>
-           <div className='background'>
-              <img src={data[0].img} alt=""/>   
-           </div>
-
-           <div className='description'>
-             <p className='title'>{data[0].title}  {" "} N.º 0001
-             </p>
-             <p>Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.</p>
-           </div>
-        </div>
-        
-        <div className='card'>
-          <div className='child'>
-          </div>
-           <div className='background'>
-              <img src={data[0].img} alt=""/>   
-           </div>
-
-           <div className='description'>
-             <p className='title'>{data[0].title}  {" "} N.º 0001
-             </p>
-             <p>Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.</p>
-           </div>
-        </div>
-        
-        <div className='card'>
-          <div className='child'>
-          </div>
-           <div className='background'>
-              <img src={data[0].img} alt=""/>   
-           </div>
-
-           <div className='description'>
-             <p className='title'>{data[0].title}  {" "} N.º 0001
-             </p>
-             <p>Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo.</p>
-           </div>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default Card
