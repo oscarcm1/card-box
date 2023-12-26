@@ -8,26 +8,16 @@ const Icon = () => (
 
 function App() {
 
-
-  //Optimizar
-  let click = true;
-  function activeMenu() {
-    if (click) {
-      click = !click;
-      document.querySelector(".menu").classList.add("active");
-    } else {
-      click = !click;
-      document.querySelector(".menu").classList.remove("active");
-    }
+  function active() {
+    document.querySelector(".menu").classList.toggle("active");
   }
-  //++++++++++++++++++++++++++++
 
   return (
     <header className="navbar">
 
       <div className="logo">
         <h1>Logo</h1>
-        <button onClick={activeMenu}><Icon /></button>
+        <button onClick={active}><Icon /></button>
       </div>
 
       <nav className="menu">
