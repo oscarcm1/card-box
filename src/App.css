@@ -15,7 +15,7 @@ html {
 }
 
 :root {
-  --color-principal: rgb(150, 223, 178);
+  --color-principal:  #008cff;
   --color-secundary: rgb(0, 0, 0);
   --color-text: rgb(34, 34, 34);
 }
@@ -215,4 +215,45 @@ a.color {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
+}
+
+.menu4 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.178);
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+  font-size: 1rem;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgb(242, 255, 255);
+  color: white;
+  height: 40px;
+}
+.search button {
+  background-color: var(--color-principal);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.navbar {
+  border: none;
 }

@@ -67,6 +67,33 @@ function App() {
         <button>Buy Now</button>
       </header>
 
+
+      {/* Menu4 */}
+
+      <div className="menu4">
+
+        <div className="search">
+          <div className="logo">
+            <Logo />
+            <button onClick={active}>< Hamburguer /></button>
+          </div>
+          <input type="text" placeholder="Search..." />
+          <button>Buy Now</button>
+        </div>
+
+        <header className="navbar">
+          <nav className="menu">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Mission</a></li>
+              <li><a href="">Prices</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
     </div>
 
   )
