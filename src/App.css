@@ -29,7 +29,8 @@ html {
   align-items: center;
   font-family: monospace;
   color: var(--color-text);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.062);
 }
 
 .navbar ul {
@@ -59,6 +60,7 @@ html {
 }
 a.color {
   background-color: var(--color-principal);
+  color: white;
 }
 
 .logo button {
@@ -147,8 +149,7 @@ a.color {
         rgba(37, 37, 37, 0.04) 100%
       ),
       linear-gradient(90deg, rgb(34, 222, 237), rgb(135, 89, 215));
-  
-    }
+  }
 
   .menu.active {
     transform: translateX(0%);
@@ -187,4 +188,31 @@ a.color {
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
   }
+}
+
+.navbar button {
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--color-principal);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+}
+
+.list-navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.navbar.menu3 a {
+  border-right: 1px solid black;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
